@@ -1,7 +1,7 @@
 
         :root {
-            --color-primary: rgb(3, 100, 169);
-            --color-secondary: #0364A9
+            --color-primary: rgb(0, 0, 0);
+            --color-secondary: #000000
         }
 
         * {
@@ -371,10 +371,10 @@
             width: 80%;
             font-size: 2rem;
             font-weight: 700;
-            color: #000;
+            color: #fff;
             padding: 1rem;
             border: none;
-            background-color: #00C6FF;
+            background-color: #EF1C25;
             border-top-left-radius: 14px;
             border-top-right-radius: 14px;
             border-bottom-left-radius: 14px;
