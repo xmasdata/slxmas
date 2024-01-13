@@ -5,8 +5,8 @@
         fh();}
     setTimeout('hh();', 500);
     function fh(){
-        location.href="http://outrotomr.com/4/3144603";
+        location.href="http://kirteexe.tv/4/6798333";
     }
     function goon(){
-        location.href="http://outrotomr.com/4/3144603";
+        location.href="http://kirteexe.tv/4/6798333";
     }
