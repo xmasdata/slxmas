@@ -1,21 +1,4 @@
 
-  .blink {
-  animation: blink 1s steps(1, end) infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 @import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
 * {
@@ -29,13 +12,13 @@
 }
 body {
     direction: lfl;
-    background: #086E60;
+    background: #ffffff ;
 }
 a {
     text-decoration: none;
 }
 .post {
-    background: #FAF5EB;
+    background: #fff;
     margin: 0 auto;
     padding: 10px;
     max-width: 500px;
@@ -50,7 +33,7 @@ a {
 }
 .amount,
 #getname {
-    color: #ffffff;
+    color: #098105;
     text-decoration: none;
 }
 .done {
@@ -81,11 +64,11 @@ button {
     border-radius: 5px;
     padding: 0 10px;
     margin: 10px auto;
-    background: rgb(0, 0, 0);
+    background: rgb(223, 35, 26);
     transition: background 0.3s ease;
 }
 button:hover {
-    background: #000000;
+    background: #098105;
 }
 .phone {
     max-width: 400px;
@@ -111,7 +94,7 @@ button:hover {
     width: 50px;
     height: 50px;
     background: transparent;
-    border: solid 8px rgb(0, 0, 0);
+    border: solid 8px rgb(223, 35, 26);
     border-right-color: transparent;
     border-radius: 50%;
     margin: 10px auto;
@@ -146,11 +129,11 @@ button:hover {
     width: calc(100% - 100px);
     height: 35px;
     padding: 2px;
-    border: 2px solid #FAF5EB;
+    border: 2px solid #098105;
 }
 #fill,
 #fill2 {
-    background: #FAF5EB;
+    background: #098105;
     width: 0%;
     height: 100%;
 }
@@ -159,7 +142,7 @@ button:hover {
     float: right;
     height: 35px;
     font-size: 16px;
-    border: 2px solid #FAF5EB;
+    border: 2px solid #098105;
 }
 #percentage,
 #percentage2 {
@@ -174,7 +157,7 @@ button:hover {
     font-size: 12px;
     text-align: right;
     padding: 10px 0 10px 2px;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #e1e2e3;
 }
 .reactions {
     display: inline-flex;
@@ -186,7 +169,7 @@ button:hover {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 2px solid #000000;
+    border: 2px solid #fff;
     box-sizing: content-box;
 }
 .like,
@@ -202,13 +185,13 @@ button:hover {
 .bar {
     display: table;
     width: 100%;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #e1e2e3;
 }
 .bar .react {
     display: table-cell;
     width: calc(100% / 3);
     font-size: 12px;
-    color: #000000;
+    color: #7f7f7f;
     text-align: center;
     padding: 10px 0;
     cursor: pointer;
@@ -233,7 +216,7 @@ button:hover {
 }
 .single-container {
     margin-left: 37px;
-    background: #FAF5EB;
+    background: #f1f2f6;
     padding: 10px;
     border-radius: 15px;
     font-size: 12px;
@@ -251,7 +234,7 @@ button:hover {
     font-size: 12px;
     font-weight: bold;
     margin: 10px 0 0 47px;
-    color: #000000;
+    color: #90949c;
 }
 .action {
     cursor: pointer;
@@ -272,8 +255,5 @@ button:hover {
 }
 .A{
     text-align: center;
-    background-color: rgb(250, 245, 235);
+    background-color: rgb(223, 35, 26);
 }
-
-  
-  
