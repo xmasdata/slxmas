@@ -1,4 +1,21 @@
 
+  .blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 @import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
 * {
@@ -12,7 +29,7 @@
 }
 body {
     direction: lfl;
-    background: #FFC702;
+    background: #086E60;
 }
 a {
     text-decoration: none;
